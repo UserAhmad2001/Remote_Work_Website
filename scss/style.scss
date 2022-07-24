@@ -1,0 +1,13 @@
+*{
+
+}
+
+body{
+    $white:hsl(0, 0%, 98%);
+    $black:hsl(0, 0%, 8%);
+    $grey:hsl(0, 0%, 41%);
+}
+
+
+@import './header';
+@import './home' ;

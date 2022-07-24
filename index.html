@@ -3,34 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./assets/style.css">
 </head>
+
 <body>
+  <header>
+    <nav>
+      <img src="./assets/images/logo.svg" alt="my logo">
+      <ul>
+        <li>Features</li>
+        <li>Company</li>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+    </nav>
 
-  Features
-  Company
-  Careers
-  About
+    <div class="register">
+      <span>Login</span>
+      <span>Regiister</span>
+    </div>
+  </header>
 
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
   
+  <main>
+<div class="home">
+  <div class="home-txt">
+    <h1>Make remote work</h1>
+    <p>Get your team in sync, no matter your location. Streamline processes, 
+    create team rituals, and watch productivity soar.</p>
+    <button>Learn more</button>
+    <div class="companies">
+      <img src="./assets/images/client-databiz.svg" 
+      alt="client databiz logo">
+      <img src="./assets/images/client-audiophile.svg" 
+      alt="client audiophile logo">
+      <img src="./assets/images/client-meet.svg" 
+      alt="client meet logo">
+      <img src="./assets/images/client-maker.svg" 
+      alt="client maker logo">
+    </div>
+  </div>
+
+  <img src="./assets/images/image-hero-desktop.png" 
+  alt="main image of guy holding laptop" 
+  srcset="./assets/images/image-hero-mobile.png 375w">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+  </main>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.

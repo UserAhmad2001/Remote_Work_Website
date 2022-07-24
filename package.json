@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass scss:assets --watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/UserAhmad2001/Remote_Work_Website/issues"
   },
-  "homepage": "https://github.com/UserAhmad2001/Remote_Work_Website#readme"
+  "homepage": "https://github.com/UserAhmad2001/Remote_Work_Website#readme",
+  "devDependencies": {
+    "sass": "^1.54.0"
+  }
 }
