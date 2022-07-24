@@ -1,3 +1,104 @@
+@font-face {
+  font-family: Epilogue;
+  src: url(https://fonts.google.com/specimen/Epilogue);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Epologue, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 500;
+}
 
+body {
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+}
+header nav img[alt="my logo"] {
+  object-fit: cover;
+  padding-inline: 2rem;
+  cursor: pointer;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  margin-left: 2rem;
+}
+header nav ul li {
+  margin: 0 1rem;
+  position: relative;
+  cursor: pointer;
+  color: hsl(0deg, 0%, 41%);
+  padding-block: 1.5rem;
+}
+header nav ul li:hover {
+  color: hsl(0deg, 0%, 8%);
+}
+header nav ul li .arrow-up {
+  display: none;
+}
+header nav ul li .dropdown-items {
+  position: absolute;
+  display: none;
+}
+header nav ul .login-register {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+header nav ul .login-register .register {
+  margin-inline: 1rem;
+}
+header nav ul .login-register .login {
+  margin-inline: 1rem;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 3rem 8%;
+}
+.home .home-txt {
+  flex-basis: 65%;
+}
+.home .home-txt h1 {
+  font-size: 6rem;
+  line-height: 6rem;
+}
+.home .home-txt p {
+  color: hsl(0deg, 0%, 41%);
+  margin-top: 3rem;
+  letter-spacing: 1px;
+}
+.home .home-txt button {
+  margin-top: 3rem;
+  background-color: hsl(0deg, 0%, 8%);
+  color: hsl(0deg, 0%, 98%);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.home .home-txt .companies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+}
+.home .home-txt .companies img {
+  object-fit: contain;
+  margin-right: 2rem;
+}
+.home .home-img {
+  width: 35%;
+  margin-right: auto;
+}
 
 /*# sourceMappingURL=style.css.map */

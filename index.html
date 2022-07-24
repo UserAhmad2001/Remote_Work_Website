@@ -13,26 +13,44 @@
     <nav>
       <img src="./assets/images/logo.svg" alt="my logo">
       <ul>
-        <li>Features</li>
-        <li>Company</li>
+        <li>Features 
+          <img src="./assets/images/icon-arrow-down.svg">
+          <img class="arrow-up" src="./assets/images/icon-arrow-up.svg">
+        <div class="dropdown-items">
+          <div class="item"><img src="./assets/images/icon-todo.svg"> Todo List</div>
+          <div class="item"><img src="./assets/images/icon-calendar.svg"> Calendar</div>
+          <div class="item"><img src="./assets/images/icon-reminders.svg"> Reminders</div>
+          <div class="item"><img src="./assets/images/icon-planning.svg"> Planning</div>
+        </div>
+        </li>
+        <li>Company 
+        <img src="./assets/images/icon-arrow-down.svg">
+        <img class="arrow-up" src="./assets/images/icon-arrow-up.svg">
+        <div class="dropdown-items">
+          <div class="item">History</div>
+          <div class="item">Our Team</div>
+          <div class="item">Blog</div>
+        </div>
+        </li>
         <li>Careers</li>
         <li>About</li>
+        <li class="login-register">
+          <span class="login">Login</span>
+          <span class="register">Regiister</span>
+        </li>
       </ul>
     </nav>
 
-    <div class="register">
-      <span>Login</span>
-      <span>Regiister</span>
-    </div>
   </header>
 
   
   <main>
 <div class="home">
   <div class="home-txt">
-    <h1>Make remote work</h1>
-    <p>Get your team in sync, no matter your location. Streamline processes, 
-    create team rituals, and watch productivity soar.</p>
+    <h1>Make <br> remote work</h1>
+    <p>Get your team in sync, no matter your location. <br>
+    Streamline processes, create team rituals,<br>
+    and watch productivity soar.</p>
     <button>Learn more</button>
     <div class="companies">
       <img src="./assets/images/client-databiz.svg" 
@@ -46,9 +64,12 @@
     </div>
   </div>
 
-  <img src="./assets/images/image-hero-desktop.png" 
+  <img src="./assets/images/image-hero-mobile.png" 
   alt="main image of guy holding laptop" 
-  srcset="./assets/images/image-hero-mobile.png 375w">
+  class="home-img"
+  srcset="./assets/images/image-hero-desktop.png 1440w,
+          ./assets\images\image-hero-mobile.png 830w"
+        >
 
 </div>
 

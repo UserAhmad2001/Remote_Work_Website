@@ -1,0 +1,58 @@
+
+header{
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: 500;
+
+        img[alt="my logo"]{
+            object-fit: cover;
+            padding-inline: 2rem;
+            cursor: pointer;
+        }
+
+        ul{
+            display: flex;
+            list-style: none;
+            width: 100%;
+            margin-left: 2rem;
+
+            li{
+                margin: 0 1rem;
+                position: relative;
+                cursor: pointer;
+                color: $grey;
+                padding-block: 1.5rem;
+
+                &:hover{
+                    color: $black;
+                }
+
+                .arrow-up{
+                    display: none;
+                }
+
+                .dropdown-items{
+                    position: absolute;
+                    display: none;
+                }
+            }
+
+            .login-register{
+                display: flex;
+                flex-direction: row;
+                margin-left: auto;
+                & .register{
+                    margin-inline: 1rem;
+                }
+                & .login{
+                    margin-inline: 1rem;
+                }
+            }
+
+        }
+    }
+
+}
