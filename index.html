@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
   <link rel="stylesheet" href="./assets/style.css">
 </head>
@@ -13,7 +13,7 @@
     <nav>
       <img src="./assets/images/logo.svg" alt="my logo">
       <ul>
-        <li>Features 
+        <li class="nav-item" tabindex="0">Features 
           <img src="./assets/images/icon-arrow-down.svg">
           <img class="arrow-up" src="./assets/images/icon-arrow-up.svg">
         <div class="dropdown-items">
@@ -23,7 +23,7 @@
           <div class="item"><img src="./assets/images/icon-planning.svg"> Planning</div>
         </div>
         </li>
-        <li>Company 
+        <li class="nav-item" tabindex="0">Company 
         <img src="./assets/images/icon-arrow-down.svg">
         <img class="arrow-up" src="./assets/images/icon-arrow-up.svg">
         <div class="dropdown-items">
@@ -32,11 +32,11 @@
           <div class="item">Blog</div>
         </div>
         </li>
-        <li>Careers</li>
-        <li>About</li>
+        <li class="nav-item" tabindex="0">Careers</li>
+        <li class="nav-item" tabindex="0">About</li>
         <li class="login-register">
-          <span class="login">Login</span>
-          <span class="register">Regiister</span>
+          <span class="login nav-item">Login</span>
+          <span class="register nav-item">Regiister</span>
         </li>
       </ul>
     </nav>
@@ -88,5 +88,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="./assets/index.js"  defer></script>
 </body>
 </html>

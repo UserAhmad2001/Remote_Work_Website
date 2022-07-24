@@ -31,30 +31,45 @@ header nav ul {
   width: 100%;
   margin-left: 2rem;
 }
-header nav ul li {
+header nav ul .nav-item {
   margin: 0 1rem;
   position: relative;
   cursor: pointer;
   color: hsl(0deg, 0%, 41%);
   padding-block: 1.5rem;
 }
-header nav ul li:hover {
+header nav ul .nav-item:hover {
   color: hsl(0deg, 0%, 8%);
 }
-header nav ul li .arrow-up {
+header nav ul .nav-item .arrow-up {
   display: none;
 }
-header nav ul li .dropdown-items {
+header nav ul .nav-item .dropdown-items {
   position: absolute;
   display: none;
+}
+header nav ul .nav-item:focus .dropdown-items {
+  display: block;
+}
+header nav ul .nav-item:focus img {
+  display: none;
+}
+header nav ul .nav-item:focus .arrow-up {
+  display: inline;
 }
 header nav ul .login-register {
   display: flex;
   flex-direction: row;
   margin-left: auto;
+  align-items: center;
+  padding: 0;
 }
 header nav ul .login-register .register {
+  box-sizing: border-box;
   margin-inline: 1rem;
+  border: 2px solid hsl(0deg, 0%, 8%);
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
 }
 header nav ul .login-register .login {
   margin-inline: 1rem;
