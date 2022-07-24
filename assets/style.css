@@ -25,6 +25,17 @@ header nav img[alt="my logo"] {
   padding-inline: 2rem;
   cursor: pointer;
 }
+header nav img[alt="menu icon"] {
+  display: none;
+  object-fit: cover;
+  padding-inline: 2rem;
+  cursor: pointer;
+  margin-left: auto;
+}
+header nav img[alt="menu icon"]:hover {
+  background-color: rgb(244, 244, 244);
+  border-radius: 2rem;
+}
 header nav ul {
   display: flex;
   list-style: none;
@@ -47,15 +58,23 @@ header nav ul .nav-item .arrow-up {
 header nav ul .nav-item .dropdown-items {
   position: absolute;
   display: none;
+  width: max-content;
+  height: max-content;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  top: 90%;
+  z-index: 100;
+}
+header nav ul .nav-item .dropdown-items .item {
+  margin: 1rem 0;
+}
+header nav ul .nav-item .dropdown-items .item img {
+  margin-inline: 0.8rem;
 }
 header nav ul .nav-item:focus .dropdown-items {
   display: block;
-}
-header nav ul .nav-item:focus img {
-  display: none;
-}
-header nav ul .nav-item:focus .arrow-up {
-  display: inline;
 }
 header nav ul .login-register {
   display: flex;
@@ -78,11 +97,11 @@ header nav ul .login-register .login {
 .home {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   padding: 3rem 8%;
 }
 .home .home-txt {
-  flex-basis: 65%;
+  flex-basis: 100%;
 }
 .home .home-txt h1 {
   font-size: 6rem;
@@ -112,8 +131,109 @@ header nav ul .login-register .login {
   margin-right: 2rem;
 }
 .home .home-img {
-  width: 35%;
-  margin-right: auto;
+  flex-basis: 100%;
+  width: 80%;
+}
+
+@media (max-width: 772px) {
+  header nav img {
+    padding: 1rem;
+  }
+  header nav #menu {
+    display: initial;
+    z-index: 101;
+  }
+  header nav ul {
+    align-items: flex-start;
+    padding-top: 2rem;
+    position: fixed;
+    left: 100%;
+    top: 0;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    transition: transform 0.1s linear;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  header nav ul .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 1rem;
+  }
+  header nav ul .nav-item .dropdown-items {
+    position: relative;
+    display: none;
+    top: 0;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+  header nav ul .nav-item .dropdown-items .item {
+    padding: 0;
+  }
+  header nav ul .nav-item .dropdown-items .item img {
+    margin: 0;
+  }
+  header nav ul .nav-item:focus .dropdown-items {
+    display: block;
+  }
+  header nav ul .nav-item img {
+    padding: 0 0.3rem;
+  }
+  header nav ul .login-register {
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 2rem;
+    justify-content: center;
+    align-self: center;
+  }
+  header nav ul .login-register .login, header nav ul .login-register .register {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 1100px) {
+  .home {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+  }
+  .home .home-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home .home-txt h1 {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .home .home-txt h1 .br {
+    display: none;
+  }
+  .home .home-txt p {
+    text-align: center;
+  }
+  .home .home-img {
+    width: 100%;
+    margin: 0;
+  }
+}
+@keyframes nav-anim {
+  0% {
+    display: block;
+  }
+  1% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

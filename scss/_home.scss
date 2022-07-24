@@ -1,11 +1,11 @@
 .home{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     padding: 3rem 8% ;
 
     .home-txt{
-        flex-basis: 65%;
+        flex-basis: 100%;
 
         h1{
             font-size: 6rem;
@@ -25,6 +25,8 @@
             border-radius: 1rem;
             padding: 1rem 2rem;
             cursor: pointer;
+            &:hover{
+            }
         }
 
         .companies{
@@ -41,10 +43,9 @@
     }
 
 
-
     .home-img{
-        width: 35%;
-        margin-right: auto;
+        flex-basis: 100%;
+        width: 80%;
     }
 
 

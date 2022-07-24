@@ -13,6 +13,18 @@ header{
             padding-inline: 2rem;
             cursor: pointer;
         }
+        img[alt="menu icon"]{
+            display: none;
+            object-fit: cover;
+            padding-inline: 2rem;
+            cursor: pointer;
+            margin-left: auto;
+            &:hover{
+                background-color: rgb(244, 244, 244);
+                border-radius: 2rem;
+            }
+        }
+
 
         ul{
             display: flex;
@@ -40,16 +52,26 @@ header{
                 .dropdown-items{
                     position: absolute;
                     display: none;
+                    width: max-content;
+                    height: max-content;
+                    background-color: white;
+                    padding: 1rem;
+                    border-radius: 1rem;
+                    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+                    top: 90%;
+                    z-index: 100;
+                    
+
+                    .item{
+                        margin: 1rem 0;
+                        img{
+                            margin-inline: .8rem;
+                        }
+                    }
                 }
                 &:focus{
                     .dropdown-items{
                         display: block;
-                    }
-                    img{
-                        display: none;
-                    }
-                    .arrow-up{
-                        display: inline;
                     }
                 } 
             }

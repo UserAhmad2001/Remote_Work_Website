@@ -12,10 +12,11 @@
   <header>
     <nav>
       <img src="./assets/images/logo.svg" alt="my logo">
-      <ul>
-        <li class="nav-item" tabindex="0">Features 
-          <img src="./assets/images/icon-arrow-down.svg">
-          <img class="arrow-up" src="./assets/images/icon-arrow-up.svg">
+      <img src="./assets/images/menu_icon.svg" alt="menu icon" id="menu">
+      <ul class="menu">
+        <li class="nav-item" tabindex="0">
+          <span>Features <img src="./assets/images/icon-arrow-down.svg"></span>
+          
         <div class="dropdown-items">
           <div class="item"><img src="./assets/images/icon-todo.svg"> Todo List</div>
           <div class="item"><img src="./assets/images/icon-calendar.svg"> Calendar</div>
@@ -23,9 +24,9 @@
           <div class="item"><img src="./assets/images/icon-planning.svg"> Planning</div>
         </div>
         </li>
-        <li class="nav-item" tabindex="0">Company 
-        <img src="./assets/images/icon-arrow-down.svg">
-        <img class="arrow-up" src="./assets/images/icon-arrow-up.svg">
+        <li class="nav-item" tabindex="0">
+          <span>Company <img src="./assets/images/icon-arrow-down.svg"></span> 
+        
         <div class="dropdown-items">
           <div class="item">History</div>
           <div class="item">Our Team</div>
@@ -36,7 +37,7 @@
         <li class="nav-item" tabindex="0">About</li>
         <li class="login-register">
           <span class="login nav-item">Login</span>
-          <span class="register nav-item">Regiister</span>
+          <span class="register nav-item">Register</span>
         </li>
       </ul>
     </nav>
@@ -47,7 +48,7 @@
   <main>
 <div class="home">
   <div class="home-txt">
-    <h1>Make <br> remote work</h1>
+    <h1>Make <br class="br"> remote work</h1>
     <p>Get your team in sync, no matter your location. <br>
     Streamline processes, create team rituals,<br>
     and watch productivity soar.</p>
@@ -64,12 +65,16 @@
     </div>
   </div>
 
-  <img src="./assets/images/image-hero-mobile.png" 
+  <!-- <img src="./assets/images/image-hero-desktop.png" 
   alt="main image of guy holding laptop" 
   class="home-img"
-  srcset="./assets/images/image-hero-desktop.png 1440w,
-          ./assets\images\image-hero-mobile.png 830w"
-        >
+  > -->
+
+  <picture >
+    <source srcset=".\assets\images\image-hero-desktop.png" media="(min-width: 1102px)" />
+    <source srcset=".\assets\images\image-hero-mobile.png" media="(min-width: 800px)" />
+    <img class="home-img" srcset=".\assets\images\image-hero-mobile.png" />
+  </picture>
 
 </div>
 
@@ -84,9 +89,10 @@
 
   </main>
 
-  <div class="attribution">
+  <div class="attribution" style="opacity: 0.2;">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Ahmad Mana</a>.
+    <a target="_blank" href="https://icons8.com/icon/83195/menu">Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
   </div>
 
   <script src="./assets/index.js"  defer></script>

@@ -1,0 +1,11 @@
+@keyframes nav-anim {
+    0%{
+        display: block;
+    }
+    1%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
